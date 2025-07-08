@@ -1,0 +1,88 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43a047; /* Green background for health */
+    color: white;
+    padding: 60px 20px;
+    border-radius: 20px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+  
+  .header-content {
+    max-width: 50%;
+  }
+  
+  .header-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+      padding: 12px 30px;
+      background-color: #ffffff; /* Green background */
+      color: #43a047; /* White text */
+      font-size: 1.2rem;
+      font-weight: 600;
+      border: 2px solid transparent;  /* Initial border is black */
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+      background-color: #c0f4c3; /* White background */
+      color: #247228; /* Green text */
+      border-color: #247228;  /* Remove the black border on hover */
+      transform: translateY(-2px); /* Slight hover effect */
+      outline: none;
+  }
+  
+  .header-image {
+    font-size: 8rem;
+    color: beige;
+    flex-basis: 40%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .header-title {
+      font-size: 2.5rem;
+    }
+  
+    .header-subtitle {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  
+    .header-image {
+      font-size: 4rem;
+      margin-top: 20px;
+    }
+  }
+  

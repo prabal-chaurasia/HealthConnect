@@ -1,0 +1,114 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #e8f5e9; /* Light green background */
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  border-radius: 50%; /* Round logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 18px;
+  color: #2e7d32; /* Dark green color for the links */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: #1b5e20; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.login-btn, .signup-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+.login-btn:hover {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+.signup-btn {
+  background-color: #66bb6a; /* Light green for signup */
+  color: white;
+  border: 2px solid #66bb6a;
+}
+
+.signup-btn:hover {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .auth-buttons button {
+    width: 100%; /* Full width buttons on mobile */
+  }
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #1b5e20;
+  transform: scale(1.05);
+}

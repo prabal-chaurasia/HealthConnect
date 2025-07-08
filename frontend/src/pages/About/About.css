@@ -1,0 +1,106 @@
+/* About.css */
+
+.about-container {
+  padding: 60px 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #f1f8f4;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #2e7d32;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  color: #388e3c;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.benefit {
+  background-color: #43a047;
+  color: white;
+  padding: 30px 25px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+  transform: scale(1.05);
+}
+
+.benefit h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.benefit p {
+  font-size: 1rem;
+  color: #e8f5e9;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit {
+    width: 90%;
+  }
+
+  .about-title,
+  .about-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .about-description,
+  .about-text {
+    font-size: 1rem;
+  }
+}

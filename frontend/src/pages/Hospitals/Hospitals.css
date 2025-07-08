@@ -1,0 +1,151 @@
+.hospitals-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #1e3a1f;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.controls input,
+.controls select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #c6e9c6;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.hospital-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hospital-block {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.hospital-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4f4d4;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  border: 1px solid #c2eec2;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.hospital-item:hover {
+  background-color: #c8efc8;
+}
+
+.hospital-item h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hospital-item p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+}
+
+.hospital-item span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #256029;
+  margin-left: 1rem;
+}
+
+.organ-list {
+  padding: 1rem 1.5rem;
+  background-color: #f5fff5;
+  border-top: 1px solid #cceacc;
+}
+
+.organ-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebfceb;
+  border: 1px solid #d2f3d2;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.organ-item:hover {
+  background-color: #dff0df;
+}
+
+.organ-item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.organ-quantity {
+  font-size: 0.9rem;
+  color: #0c5c1a;
+}
+
+.consultation-button {
+  margin-top: 1rem;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #2e8b47;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  background-color: #34a853;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #9ed8af;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+  color: #14532d;
+}

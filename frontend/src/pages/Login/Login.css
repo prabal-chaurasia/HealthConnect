@@ -1,0 +1,103 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+  padding: 30px;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e7e32;
+}
+
+/* Role toggle */
+.role-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.role-toggle button {
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  color: #2e7e32;
+}
+
+.role-toggle .active {
+  background: #2e7e32;
+  color: white;
+}
+
+.login-form .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #f9f9f9;
+}
+
+.input-icon {
+  margin-right: 0.5rem;
+  color: #2e7e32;
+}
+
+.login-form input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2e7e32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.login-submit:hover {
+  background: #1b5e20;
+}
+
+.login-switch {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.login-switch a {
+  color: #2e7e32;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-switch a:hover {
+  text-decoration: underline;
+}

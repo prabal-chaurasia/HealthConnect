@@ -1,0 +1,138 @@
+/* General styling for consultation container */
+.consultation-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #3e8e41;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the available doctors list */
+  .doctors-list {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctors-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .doctors-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .doctors-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .doctor-info h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .doctor-info p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Styling for the appointment form */
+  .consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .consultation-form label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .consultation-form select,
+  .consultation-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .consultation-form select:focus,
+  .consultation-form input:focus {
+    border-color: #3e8e41;
+    outline: none;
+  }
+  
+  .consultation-form button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3e8e41;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .consultation-form button:hover {
+    background-color: #328d33;
+  }
+  
+  /* Confirmation message styling */
+  .confirmation-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3e8e41;
+    font-weight: bold;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .consultation-container {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .consultation-form label {
+      font-size: 0.9rem;
+    }
+  
+    .consultation-form select,
+    .consultation-form input {
+      font-size: 0.9rem;
+    }
+  
+    .consultation-form button {
+      font-size: 1rem;
+    }
+  
+    .confirmation-message {
+      font-size: 1rem;
+    }
+  }
+  
